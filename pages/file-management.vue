@@ -205,6 +205,9 @@
 </template>
 
 <script setup>
+definePageMeta({
+  middleware: 'auth'
+})
 import { ref, onMounted, watch } from 'vue'
 
 const fileInput = ref(null)
