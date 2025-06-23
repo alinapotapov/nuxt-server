@@ -1,11 +1,12 @@
-import { defineEventHandler, getQuery, sendRedirect } from 'h3'
+/*import { defineEventHandler, getQuery, sendRedirect } from 'h3'
+
 //import { setUserSession } from '#auth-utils'
 
 export default defineEventHandler(async (event) => {
   const { code } = getQuery(event)
   if (!code) {
     // Redirect to Keycloak
-    const redirectUrl = `your-keycloak-issuer-url/protocol/openid-connect/auth?client_id=your-keycloak-client-id&redirect_uri=http://localhost:3000/api/auth/keycloak&response_type=code&scope=openid`
+    const redirectUrl = `http://localhost:8080/realms/master/broker/keycloak-oidc/endpoint`
     return sendRedirect(event, redirectUrl)
   }
 
@@ -22,4 +23,4 @@ export default defineEventHandler(async (event) => {
     console.error('Keycloak OAuth error:', error)
     return sendRedirect(event, '/?error=1')
   }
-}) 
+}) */
